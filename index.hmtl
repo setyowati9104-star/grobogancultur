@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memuat Grobogan Kultura...</title>
+    <style>
+        /* Reset margin & padding */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Latar belakang dengan warna hijau persis seperti Hero Section di web utamamu */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, rgba(25,135,84,1) 0%, rgba(15,81,50,1) 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Container untuk mengatur posisi dan animasi masuk */
+        .intro-container {
+            text-align: center;
+            /* Animasi fadeInUp akan berjalan selama 1.2 detik dengan efek memantul halus */
+            animation: fadeInUp 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        /* Gaya Badge Kuning */
+        .badge {
+            background-color: #ffc107;
+            color: #212529;
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Gaya Judul Utama */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+
+        /* Animasi Loader (Lingkaran Berputar) */
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            border-top-color: #ffc107; /* Warna kuning selaras dengan badge */
+            animation: spin 1s ease-in-out infinite;
+            margin: 0 auto;
+        }
+
+        /* Keyframes untuk Putaran Loader */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Keyframes untuk Efek Muncul dari Bawah */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsif untuk layar HP */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            p { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="intro-container">
+        <div class="badge">EKSPLORASI DIGITAL</div>
+        <h1>GROBOGAN KULTURA</h1>
+        <p>Menyiapkan pengalaman terbaik untuk Anda...</p>
+        
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        // Mengarahkan (redirect) ke web utama setelah 3.5 detik (3500 ms)
+        setTimeout(function() {
+            window.location.href = "http://grobogancultur.infinityfreeapp.com";
+        }, 3500);
+    </script>
+
+</body>
+</html>
